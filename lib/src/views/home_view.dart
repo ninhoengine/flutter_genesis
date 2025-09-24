@@ -55,7 +55,7 @@ class HomeView extends StatelessWidget {
         actions: [
           // App version
          Text(
-            'v0.0.1 - alpha',
+            'v0.0.0 - development',
             style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
           ),
 

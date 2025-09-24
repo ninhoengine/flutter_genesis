@@ -8,7 +8,7 @@ class PlatformsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomExpandedCard(
-      flex: 1,
+      flex: 4,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
