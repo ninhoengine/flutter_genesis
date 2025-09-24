@@ -8,7 +8,7 @@ class ProjectPreviewCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomExpandedCard(
-      flex: 1,
+      flex: 6,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -33,9 +33,12 @@ class ProjectPreviewCard extends StatelessWidget {
               ),
             ),
           ),
-          Spacer(),
+
+          SizedBox(height: 10),
 
           Divider(color: Colors.grey.shade300),
+
+          Spacer(),
 
           // Project name
           Padding(
@@ -70,11 +73,10 @@ class ProjectPreviewCard extends StatelessWidget {
                 const Icon(Icons.description, color: Colors.blueGrey, size: 18),
                 Expanded(
                   child: Text(
-                    'Description: A personalized new Flutter project with a long description that should not overflow or break the layout. It will be truncated if too long.' *
-                        3,
+                    'Description: A personalized new Flutter project with a long description that should not overflow or break the layout. It will be truncated if too long.',
                     style: const TextStyle(fontSize: 15, color: Colors.black54),
-                    maxLines: 1,
                     overflow: TextOverflow.ellipsis,
+                    maxLines: 2,
                   ),
                 ),
               ],
