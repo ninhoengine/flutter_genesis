@@ -10,6 +10,7 @@ class AppWidget extends StatelessWidget {
       // Theming
       theme: ThemeData(colorSchemeSeed: Colors.blue),
       home: HomeView(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

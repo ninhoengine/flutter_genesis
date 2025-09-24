@@ -18,6 +18,55 @@ class HomeView extends StatelessWidget {
     // final double height = size.height;
 
     return Scaffold(
+      // AppBar
+      appBar: AppBar(
+        //
+        title: Row(
+          spacing: 10,
+          children: [
+            // App logo
+            SizedBox(
+              // Sizing
+              width: 50,
+              height: 50,
+
+              child: Card(
+                color: Colors.blue.shade50,
+                child: const Icon(Icons.flutter_dash, color: Colors.blue),
+              ),
+            ),
+
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Flutter Genesis',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const Text(
+                  'Configure and generate your flutter personalized projects',
+                  style: TextStyle(fontSize: 14, color: Colors.grey),
+                ),
+              ],
+            ),
+          ],
+        ),
+
+        actions: [
+          // App version
+         Text(
+            'v0.0.1 - alpha',
+            style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
+          ),
+
+          const SizedBox(width: 20),
+        ],
+
+        backgroundColor: Colors.grey.shade100,
+        toolbarHeight: 80,
+        elevation: 3,
+      ),
+
       // Main view
       body: Padding(
         //
